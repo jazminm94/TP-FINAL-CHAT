@@ -89,6 +89,16 @@ li {
     flex-direction: column;
 }
 
+.chat-cont-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-cont-empty p {
+    color: gray;
+}
+
 .chat header {
     border-bottom: 1px solid #ccc;
     padding: 15px;
@@ -106,7 +116,7 @@ li {
 }
 
 .message {
-    width: 400px;
+    width: 300px;
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.192);
@@ -122,6 +132,15 @@ li {
     text-align: end;
     margin-top: 5px;
 
+}
+
+.received {
+    align-self: flex-start;
+}
+
+.me {
+    background-color: rgb(192, 232, 192);
+    align-self: end; 
 }
 
 
@@ -158,4 +177,10 @@ li {
 .chat-input button:hover {
     color: #5d5c5c88;
     background-color: white;
+}
+
+@media (max-width: 880px) {
+    aside {
+        display: none;
+    }
 }

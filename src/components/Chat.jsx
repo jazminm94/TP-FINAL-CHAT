@@ -45,8 +45,10 @@ const sendMessages = () => {
 }, [messages])
 
 if (!activeUser) {
-    return(
-        <p>Selecciona un contacto para empezar a chatear</p>
+    return (
+        <section className="chat-cont-empty">
+        <p className="chat-empty">Selecciona un contacto para empezar a chatear</p>
+        </section>
     )
 }
 
