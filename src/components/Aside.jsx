@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 /* import { users } from "../services/mockApi.js" */
 
 
-const Aside = () => {
+const Aside = ({onActiveUser}) => {
 
     const [search, setSearch] = useState("")
     const [users, setUsers] = useState([])
